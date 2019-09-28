@@ -25,8 +25,15 @@ public class Train_one {
         arr[i] = arr[j];
         arr[j] = temp;
     }
+    public static void swap(char[] arr, int i, int j) {
+        char temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 
-    //链表结构
+    /**
+     * 链表结构
+     */
     public class ListNode {
         int val;
         ListNode next = null;
@@ -36,7 +43,9 @@ public class Train_one {
         }
     }
 
-    //Definition for binary tree
+    /**
+     * Definition for binary tree
+     */
     public static class TreeNode {
         int val;
         TreeNode left;
@@ -47,7 +56,9 @@ public class Train_one {
         }
     }
 
-    //定义TreeLinkNode,树结构
+    /**
+     * 定义TreeLinkNode,树结构
+     */
     public class TreeLinkNode {
         int val;
         TreeLinkNode left = null;
@@ -59,6 +70,18 @@ public class Train_one {
         }
     }
 
+    /**
+     * 复杂链表节点
+     */
+    public class RandomListNode {
+        int label;
+        RandomListNode next = null;
+        RandomListNode random = null;
+
+        RandomListNode(int label) {
+            this.label = label;
+        }
+    }
     //找出数组中重复数字(已知数组的数字范围是0~n-1，数组长度n)  TC：O(n) SC: O(1) 辅助空间O(n)
     public static boolean Test3_1(int[] a) {
         if (a == null || a.length <= 1)
@@ -164,7 +187,6 @@ public class Train_one {
         }
         return a.toString();
     }
-
 
     //从尾至头打印链表(不改变原结构，非递归)
     public static ArrayList<Integer> Test6(ListNode listNode) {
@@ -899,5 +921,116 @@ public class Train_one {
     }
 
     //复杂链表的复制
+    public RandomListNode Test35(RandomListNode pHead){
+        if (pHead==null)
+            return null;
+        //第一步：对于每个节点，复制一个到原节点后面
+        RandomListNode node=pHead;
+        while (node!=null){
+            RandomListNode temp=new RandomListNode(node.label);
+            temp.next=node.next;
+            node.next=temp;
+            node=temp.next;
+        }
+        //第二步：设置复制节点的random指针
+        node=pHead;
+        while (node!=null){
+            RandomListNode cloned=node.next;
+            cloned.random=node.random.next;
+            node=cloned.next;
+        }
+        //第三步：拆分链表，奇数节点是原链表，偶数节点是新链表
+        node=pHead;
+        RandomListNode clonedHead=node.next;
+        RandomListNode odd=node;
+        RandomListNode even=node.next;
 
+        while (node!=null){
+            odd.next=node.next.next;
+            even.next=even.next.next;
+            node=node.next.next;
+        }
+        return clonedHead;
+
+    }
+
+    //二叉搜索树与双向链表
+    public TreeNode Convert(TreeNode pRootOfTree){
+        TreeNode root = pRootOfTree;
+        if(root==null)
+            return null;
+
+        //定位左子树链表的头节点
+        TreeNode left = Convert(root.left);
+        TreeNode p = left;
+        //定位左子树链表的尾节点
+        while(p!=null&&p.right!=null)
+            p = p.right;
+
+        //3.如果左子树链表不为空，则将当前root节点追加到左子树上
+        if(left!=null)
+        {
+            p.right = root;
+            root.left = p;
+        }
+        //4.如果右子树链表不为空，则将该链表追加的root节点之后。
+        TreeNode right= Convert(root.right);
+        if(right!=null)
+        {
+            root.right = right;
+            right.left = root;
+        }
+
+        //5.根据左子树链表是否为空，返回相应的头节点
+        if(left!=null)
+            return left;
+
+        return root;
+    }
+
+    //序列化和反序列化函数
+    public String Test36_1(TreeNode root){
+        if (root==null)
+            return "";
+        StringBuilder sb=new StringBuilder();
+        Serialize(root,sb);
+        return sb.toString();
+
+    }
+    public void Serialize(TreeNode root, StringBuilder sb){
+        if (root==null){
+            sb.append("#!");
+        }
+        else {
+            sb.append(root.val);
+            sb.append("!");
+            Serialize(root.left,sb);
+            Serialize(root.right, sb);
+        }
+    }
+
+    //字符串的排列
+    public static ArrayList<String> Test38(String str){
+        ArrayList<String> result=new ArrayList<String>();
+        if (str==null || str.length()<1)
+            return result;
+        if (str.length()==1){
+            result.add(str);
+            return result;
+        }
+        char[] chars=str.toCharArray();
+
+        return sort(chars,0,result);
+    }
+    public static ArrayList<String> sort(char[] chars, int index, ArrayList<String> result){
+        if (index==chars.length-1 && !result.contains(String.valueOf(chars)))
+            result.add(String.valueOf(chars));
+        else {
+            for (int i=index;i<chars.length-1;i++){
+                swap(chars,index,i);
+                sort(chars,index+1,result);
+            }
+        }
+        return result;
+    }
 }
