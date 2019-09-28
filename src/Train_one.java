@@ -7,14 +7,8 @@ import java.util.*;
 public class Train_one {
     public static void main(String[] args) {
 
-        TreeNode a=new TreeNode(10);
-        TreeNode b=new TreeNode(5);
-        TreeNode c=new TreeNode(4);
-        TreeNode d=new TreeNode(7);
-        TreeNode e=new TreeNode(12);
-        a.left=b;a.right=e;
-        b.left=c;b.right=d;
-        ArrayList<ArrayList<Integer>> result=Test34(a,22);
+        int[] a={1,2,3,2,2,2,5,4,2};
+        int r=Test39(a);
 
     }
 
@@ -1011,26 +1005,82 @@ public class Train_one {
 
     //字符串的排列
     public static ArrayList<String> Test38(String str){
-        ArrayList<String> result=new ArrayList<String>();
-        if (str==null || str.length()<1)
-            return result;
-        if (str.length()==1){
-            result.add(str);
-            return result;
-        }
-        char[] chars=str.toCharArray();
-
-        return sort(chars,0,result);
+        StringBuilder strBuilder = new StringBuilder(str);
+        ArrayList<String> result = PermutationHelp(strBuilder);
+        return result;
     }
-    public static ArrayList<String> sort(char[] chars, int index, ArrayList<String> result){
-        if (index==chars.length-1 && !result.contains(String.valueOf(chars)))
-            result.add(String.valueOf(chars));
-        else {
-            for (int i=index;i<chars.length-1;i++){
-                swap(chars,index,i);
-                sort(chars,index+1,result);
+    public static ArrayList<String> PermutationHelp(StringBuilder str){
+        ArrayList<String> result = new  ArrayList<String>();
+        if(str.length() == 1)
+            result.add(str.toString());
+        else{
+            for(int i = 0; i < str.length(); i++){
+                if(i==0  || str.charAt(i) != str.charAt(0)){    //第零个时，要将后面的字符进行迭代，因此i==0必有
+                    char temp = str.charAt(i);
+                    str.setCharAt(i, str.charAt(0));
+                    str.setCharAt(0, temp);
+                    ArrayList<String> newResult = PermutationHelp(new StringBuilder(str.substring(1)));
+                    for(int j =0; j < newResult.size(); j++)
+                        result.add(str.substring(0,1)+newResult.get(j));
+                    //用完还是要放回去的
+                    temp = str.charAt(0);
+                    str.setCharAt(0, str.charAt(i));
+                    str.setCharAt(i, temp);
+                }
+            }
+            //需要在做一个排序操作
+            Collections.sort(result);
+        }
+        return result;
+    }
+
+    //数组中出现次数超过一半的数字
+    public static int Test39(int [] array) {
+        if (array==null || array.length<1)
+            return 0;
+        int[] num={array[0],1};
+        for (int i=1;i<array.length;i++){
+            if (array[i] == num[0])
+                num[1]++;
+            else if (num[1]==0){
+                num[0]=array[i];
+                num[0]++;
+            }
+            else if (num[1]!=0){
+                num[0]--;
             }
         }
+        int times=0;
+        for (int i=0;i<=array.length;i++){
+            if (array[i]==num[0])
+                times++;
+        }
+        if (times*2<array.length)
+            return 0;
+        return num[0];
+    }
+
+    //最小的k个数
+    public static ArrayList<Integer> Test40(int [] input, int k){
+        //采用快速排序中的partition函数，进行随机快速排序
+        ArrayList<Integer> result=new ArrayList<Integer>();
+        if(input==null || input.length<1 || k<1 || k>input.length)
+            return result;
+
+        int left=0,right=input.length-1;
+        int index=Train_two.partition(input,left,right);
+        while (index!=k-1){
+            if (index>k-1){
+                right=index-1;
+                index=Train_two.partition(input,left,right);
+            }
+            else if (index<k-1){
+                left=index+1;
+                index=Train_two.partition(input,left,right);
+            }
+        }
+        for (int i=0;i<=index;i++)
+            result.add(input[i]);
         return result;
     }
 }
