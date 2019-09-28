@@ -25,7 +25,7 @@ public class Train_two {
         quickSort(arr,index+1,right);
 
     }
-    //快速排序：找出分割点
+    //快速排序：找出分割点   也称为随机快速排序
     public static int partition(int[] arr, int left, int right){
         int pivot=arr[left];
         int i=left,j=right;
