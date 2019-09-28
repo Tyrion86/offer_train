@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ff99b55-6ae7-41c7-aa9c-ba9b375318d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Train_one.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Train_two.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Train_one.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Train_one.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,18 +21,70 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Train_one.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="550">
+              <caret line="1021" selection-start-line="1021" selection-end-line="1021" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#881#882#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#1131#1132#0" expanded="true" />
-                <element signature="e#1169#1170#0" expanded="true" />
-                <element signature="e#19050#19051#0" expanded="true" />
-                <element signature="e#19098#19099#0" expanded="true" />
+                <element signature="e#568#722#0" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#728#919#0" />
+                <element signature="e#901#902#0" expanded="true" />
+                <element signature="e#932#933#0" expanded="true" />
+                <element signature="e#925#1176#0" />
+                <element signature="e#1176#1177#0" expanded="true" />
+                <element signature="e#1214#1215#0" expanded="true" />
+                <element signature="e#1427#1428#0" expanded="true" />
+                <element signature="e#1469#1470#0" expanded="true" />
+                <element signature="e#1182#1887#0" />
+                <element signature="e#1893#2575#0" />
+                <element signature="e#2581#2863#0" />
+                <element signature="e#2869#3437#0" />
+                <element signature="e#3443#4149#0" />
+                <element signature="e#4156#4490#0" />
+                <element signature="e#4497#5153#0" />
+                <element signature="e#5160#5893#0" />
+                <element signature="e#6066#6383#0" />
+                <element signature="e#6389#7232#0" />
+                <element signature="e#7238#7750#0" />
+                <element signature="e#7756#8751#0" />
+                <element signature="e#8757#9071#0" />
+                <element signature="e#9077#9798#0" />
+                <element signature="e#9804#9995#0" />
+                <element signature="e#10001#10738#0" />
+                <element signature="e#10744#10969#0" />
+                <element signature="e#10975#11474#0" />
+                <element signature="e#11480#11790#0" />
+                <element signature="e#11796#12117#0" />
+                <element signature="e#12123#12471#0" />
+                <element signature="e#12477#13042#0" />
+                <element signature="e#13048#13736#0" />
+                <element signature="e#13742#13932#0" />
+                <element signature="e#13938#15096#0" />
+                <element signature="e#15102#15503#0" />
+                <element signature="e#15509#15958#0" />
+                <element signature="e#15964#16268#0" />
+                <element signature="e#16274#16940#0" />
+                <element signature="e#16946#17383#0" />
+                <element signature="e#17389#17862#0" />
+                <element signature="e#17868#18325#0" />
+                <element signature="e#18331#18681#0" />
+                <element signature="e#18687#18986#0" />
+                <element signature="e#19348#19349#0" expanded="true" />
+                <element signature="e#19396#19397#0" expanded="true" />
+                <element signature="e#19105#19480#0" />
+                <element signature="e#19486#20035#0" />
+                <element signature="e#20041#20864#0" />
+                <element signature="e#20900#21380#0" />
+                <element signature="e#21386#21953#0" />
+                <element signature="e#21959#23041#0" />
+                <element signature="e#23047#24509#0" />
+                <element signature="e#24515#25212#0" />
+                <element signature="e#25218#25571#0" />
+                <element signature="e#25576#26187#0" />
+                <element signature="e#26497#26614#0" />
+                <element signature="e#27438#28224#0" />
+                <element signature="e#28836#28844#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,12 +118,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Train_one.java" />
         <option value="$PROJECT_DIR$/src/Train_two.java" />
+        <option value="$PROJECT_DIR$/src/Train_one.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -91,11 +143,6 @@
               <item name="offer_train" type="b2602c69:ProjectViewProjectNode" />
               <item name="offer_train" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="offer_train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="offer_train" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -103,6 +150,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -121,6 +169,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Train_one" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Train_one" />
+      <module name="offer_train" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Train_one" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -131,24 +193,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569387701309</updated>
-      <workItem from="1569387702999" duration="436000" />
+      <workItem from="1569387702999" duration="12779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="436000" />
+    <option name="totallyTimeSpent" value="12779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -156,7 +218,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -213,18 +275,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Train_one.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="550">
+          <caret line="1021" selection-start-line="1021" selection-end-line="1021" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-            <element signature="e#19050#19051#0" expanded="true" />
-            <element signature="e#19098#19099#0" expanded="true" />
+            <element signature="e#568#722#0" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#728#919#0" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#925#1176#0" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1427#1428#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1182#1887#0" />
+            <element signature="e#1893#2575#0" />
+            <element signature="e#2581#2863#0" />
+            <element signature="e#2869#3437#0" />
+            <element signature="e#3443#4149#0" />
+            <element signature="e#4156#4490#0" />
+            <element signature="e#4497#5153#0" />
+            <element signature="e#5160#5893#0" />
+            <element signature="e#6066#6383#0" />
+            <element signature="e#6389#7232#0" />
+            <element signature="e#7238#7750#0" />
+            <element signature="e#7756#8751#0" />
+            <element signature="e#8757#9071#0" />
+            <element signature="e#9077#9798#0" />
+            <element signature="e#9804#9995#0" />
+            <element signature="e#10001#10738#0" />
+            <element signature="e#10744#10969#0" />
+            <element signature="e#10975#11474#0" />
+            <element signature="e#11480#11790#0" />
+            <element signature="e#11796#12117#0" />
+            <element signature="e#12123#12471#0" />
+            <element signature="e#12477#13042#0" />
+            <element signature="e#13048#13736#0" />
+            <element signature="e#13742#13932#0" />
+            <element signature="e#13938#15096#0" />
+            <element signature="e#15102#15503#0" />
+            <element signature="e#15509#15958#0" />
+            <element signature="e#15964#16268#0" />
+            <element signature="e#16274#16940#0" />
+            <element signature="e#16946#17383#0" />
+            <element signature="e#17389#17862#0" />
+            <element signature="e#17868#18325#0" />
+            <element signature="e#18331#18681#0" />
+            <element signature="e#18687#18986#0" />
+            <element signature="e#19348#19349#0" expanded="true" />
+            <element signature="e#19396#19397#0" expanded="true" />
+            <element signature="e#19105#19480#0" />
+            <element signature="e#19486#20035#0" />
+            <element signature="e#20041#20864#0" />
+            <element signature="e#20900#21380#0" />
+            <element signature="e#21386#21953#0" />
+            <element signature="e#21959#23041#0" />
+            <element signature="e#23047#24509#0" />
+            <element signature="e#24515#25212#0" />
+            <element signature="e#25218#25571#0" />
+            <element signature="e#25576#26187#0" />
+            <element signature="e#26497#26614#0" />
+            <element signature="e#27438#28224#0" />
+            <element signature="e#28836#28844#0" expanded="true" />
           </folding>
         </state>
       </provider>
