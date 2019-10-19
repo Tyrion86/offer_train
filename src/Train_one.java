@@ -7,8 +7,8 @@ import java.util.*;
 public class Train_one {
     public static void main(String[] args) {
 
-        int[] a={1,2,3,2,2,2,5,4,2};
-        int r=Test39(a);
+        int[] a={321,32,3};
+        String r=Test45(a);
 
     }
 
@@ -1082,5 +1082,68 @@ public class Train_one {
         for (int i=0;i<=index;i++)
             result.add(input[i]);
         return result;
+    }
+
+    //连续子数组的最大和
+    public static int Test42(int[] array){
+        if (array==null || array.length<1)
+            return 0;
+
+        int max=array[0];//记录最大值
+        int current=0;//记录当前值
+        for (int i=0;i<array.length;i++){
+            if (current<=0)
+                current=array[i];
+            else
+                current+=array[i];
+
+            if (current>max)
+                max=current;
+        }
+        return max;
+    }
+
+    //1-n整数中1出现的次数
+    public static int Test43(int n){
+        if (n<=0)
+            return 0;
+
+        int count=0;
+        while(n>0){
+            String str=String.valueOf(n);
+            char [] chars=str.toCharArray();
+            for(int i=0;i<chars.length;i++){
+                if(chars[i]=='1')
+                    count++;
+            }
+            n--;
+        }
+        return count;
+    }
+
+    //把数组排成最小的数
+    public static String Test45(int[] numbers){
+        if(numbers == null || numbers.length == 0) return "";
+        int len = numbers.length;
+        String[] str = new String[len];
+        StringBuilder sb = new StringBuilder();
+
+        for(int i = 0; i < len; i++){
+            str[i] = String.valueOf(numbers[i]);
+        }
+
+        Arrays.sort(str,new Comparator<String>(){
+            @Override
+            public int compare(String s1, String s2) {
+                String c1 = s1 + s2;
+                String c2 = s2 + s1;
+                return c1.compareTo(c2);
+            }
+        });
+
+        for(int i = 0; i < len; i++){
+            sb.append(str[i]);
+        }
+        return sb.toString();
     }
 }
